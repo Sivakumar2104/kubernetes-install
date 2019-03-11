@@ -1,0 +1,11 @@
+---
+
+- name: install apt-transport-https and curl
+  become: true
+  become_user: root
+  apt:
+          name: "{{ packages }}"
+  vars:
+          packages:
+          - apt-transport-https
+          - curl

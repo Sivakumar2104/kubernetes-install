@@ -1,0 +1,15 @@
+--- 
+
+- name: update
+  hosts: all
+  roles:
+          - update
+          - install
+          - add-key
+- name: install kube
+  hosts: all
+  roles:
+          - update
+          - install-kube
+
+

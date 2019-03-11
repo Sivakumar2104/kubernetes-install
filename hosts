@@ -1,0 +1,10 @@
+[master]
+ip-172-31-0-112
+
+[node]
+ip-172-31-1-243
+ip-172-31-11-0
+
+[all:children]
+master
+node
